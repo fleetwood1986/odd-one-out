@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pairs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="modal" id="modal">
+      <div class="modal-content" id="modal-content">
+        <br />
+        <h1>Odd one out</h1>
+        <br />
+        <hr />
+        <br />
+        <h4>simply Pick the odd one out</h4>
+
+        <h6>to win you must make it to level 10</h6>
+        <br />
+        <br />
+        <h1>Goodluck!</h1>
+        <br />
+        <button class="close" id="close" onclick="closeModal()">
+          Lets play
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-win" id="modal1">
+      <div class="modal-content mcw" id="modalContent1">
+        <br />
+        <h1>Odd one out</h1>
+        <br />
+        <hr />
+        <br />
+        <h1>Winner winner chicken dinner!!!</h1>
+        <br />
+        <img src="bananas/chicken.png" alt="chicken" height="250px" />
+      </div>
+    </div>
+
+    <div class="modal-lose" id="modal2">
+      <div class="modal-content mcl" id="modalContent2">
+        <br />
+        <h1>Odd one out</h1>
+        <br />
+        <hr />
+        <br />
+        <h1>U lose!!!!!</h1>
+        <br />
+        <br />
+        <button class="close" id="close" onclick="window.location.reload();">
+          Try again
+        </button>
+      </div>
+    </div>
+
+    <div class="container" id="container">
+      <div class="header a" id="header">Odd One Out</div>
+      <div class="scoreBoard a" id="scoreBoard">
+        <div class="level-content" id="level-content">
+          level:
+          <span class="level" id="level">0</span>
+        </div>
+        <div class="lives-content" id="lives-content">
+          lives:
+          <span class="lives" id="lives">3</span>
+        </div>
+
+        <div class="restart" id="restart" onclick="window.location.reload();">
+          restart
+        </div>
+      </div>
+      <div class="mainbox" id="mainbox">
+        <div class="main1 a b odd" id="main1" onclick="odd()">
+          <p id="p1">1</p>
+        </div>
+        <div class="main2 a b even" id="main2" onclick="even()">
+          <p id="p2">4</p>
+        </div>
+        <div class="main3 a b even" id="main3" onclick="even()">
+          <p id="p3">16</p>
+        </div>
+        <div class="main4 a b even" id="main4" onclick="even()">
+          <p id="p4">88</p>
+        </div>
+        <div class="main5 a b even" id="main5" onclick="even()">
+          <p id="p5">524</p>
+        </div>
+        <div class="main6 a b even" id="main6" onclick="even()">
+          <p id="p6">102</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
